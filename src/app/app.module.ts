@@ -15,6 +15,10 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 
+import {SortByPipe} from './home/sortBy.pipe';
+import {ProcessComponent} from './process/process.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +26,13 @@ import { ContactComponent } from './contact/contact.component';
     RepoBrowserComponent,
     RepoListComponent,
     RepoDetailComponent,
+    
     HomeComponent,
-    ContactComponent
+    SortByPipe,
+
+    ContactComponent,
+
+    ProcessComponent
   ],
   imports: [
     BrowserModule,
