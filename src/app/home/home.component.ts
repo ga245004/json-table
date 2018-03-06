@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.sortColumn = 'name';
     this.sortOrder = false;
-    let url = `https://raw.githubusercontent.com/ga245004/json-table/master/data/data.json`;
+    let url = `github url>/data.json`;
     return this.http.get(url, {})
       .map((res) => {        
         return res.json();

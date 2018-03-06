@@ -16,7 +16,7 @@ export class ProcessComponent implements OnInit {
 
 
   ngOnInit() {
-    let url = `https://raw.githubusercontent.com/ga245004/json-table/master/data/data.json`;
+    let url = `<github url>/data.json`;
     return this.http.get(url, {})
       .map((res) => {        
         return res.json();
